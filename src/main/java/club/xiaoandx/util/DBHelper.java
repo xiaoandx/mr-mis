@@ -28,7 +28,7 @@ import java.sql.SQLException;
  */
 public class DBHelper {
     public static final String driver = "com.mysql.jdbc.Driver";
-    public static final String url = "jdbc:mysql://47.108.3.9:3306/dn_javaweb?characterEncoding=utf8&useSSL=true";
+    public static final String url = "jdbc:mysql://127.0.0.1:3306/dn_javaweb?characterEncoding=utf8&useSSL=true";
     public static final String username = "dn_xiaoandx";
     public static final String password = "dn_javaweb123";
     public static Connection con = null;
