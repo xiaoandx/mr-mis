@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+         http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" version="3.0">
+  <display-name>mr</display-name>
+
+<!--  默认显示页面，当用户服务的是一个目录，而不是一个文件时，默认显示该页面-->
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+
+  <jsp-config>
+    <jsp-property-group>
+      <description>html encoding</description>
+      <display-name>JSPConfiguration</display-name>
+      <url-pattern>*.html</url-pattern>
+      <el-ignored>true</el-ignored>
+      <page-encoding>UTF-8</page-encoding>
+      <scripting-invalid>false</scripting-invalid>
+      <include-prelude></include-prelude>
+      <include-coda></include-coda>
+    </jsp-property-group>
+  </jsp-config>
+
+  <!-- error page -->
+  <error-page>
+    <error-code>500</error-code>
+    <location>/page/500.html</location>
+  </error-page>
+  <error-page>
+    <error-code>404</error-code>
+    <location>/page/404.html</location>
+  </error-page>
+  
+  <!-- 登录 -->
+  <servlet>
+    <servlet-name>loginServlet</servlet-name>
+    <servlet-class>club.xiaoandx.servlet.controller.LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>loginServlet</servlet-name>
+    <url-pattern>/login</url-pattern>
+  </servlet-mapping>
+  <!--登录过滤器-->
+   <filter>
+    <filter-name>LoginFilter</filter-name>
+    <filter-class>club.xiaoandx.filter.LoginFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>LoginFilter</filter-name>
+    <url-pattern>/api/*</url-pattern>
+  </filter-mapping>
+
+  <!-- home -->
+  <servlet>
+    <servlet-name>HomeServlet</servlet-name>
+    <servlet-class>club.xiaoandx.servlet.controller.HomeServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HomeServlet</servlet-name>
+    <url-pattern>/api/home</url-pattern>
+  </servlet-mapping>
+
+  <!-- student -->
+  <servlet>
+    <servlet-name>StudentServlet</servlet-name>
+    <servlet-class>club.xiaoandx.servlet.controller.StudentServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>StudentServlet</servlet-name>
+    <url-pattern>/api/stud</url-pattern>
+  </servlet-mapping>
+
+  <!--  inter -->
+  <servlet>
+    <servlet-name>PracticeServlet</servlet-name>
+    <servlet-class>club.xiaoandx.servlet.controller.PracticeServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PracticeServlet</servlet-name>
+    <url-pattern>/api/practice</url-pattern>
+  </servlet-mapping>
+
+</web-app>

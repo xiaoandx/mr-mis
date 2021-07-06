@@ -1,0 +1,19 @@
+{
+  "code": 0,
+  "msg": "",
+  "count": 2,
+  "data": [
+    {
+      "id": 100001,
+      "filename": "学生就业导库模板",
+      "url": "https://image.xiaoandx.club/open/file/excel%E5%AD%A6%E7%94%9F%E5%B0%B1%E4%B8%9A%E5%AF%BC%E5%BA%93%E6%A8%A1%E6%9D%BF.xlsx",
+      "remarks": "注意表格数据尽量为最新的学生信息，如果出现重复信息将会影响数据导库时间"
+    },
+    {
+      "id": 100002,
+      "filename": "学生信息导库模板",
+      "url": "https://image.xiaoandx.club/open/file/excel%E5%AD%A6%E7%94%9F%E4%BF%A1%E6%81%AF%E5%AF%BC%E5%BA%93%E6%A8%A1%E6%9D%BF.xlsx",
+      "remarks": "注意表格数据尽量为最新的学生实习信息，如果出现重复信息将会影响数据导库时间"
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "homeInfo": {
+    "title": "首页",
+    "href": "page/welcome-2.html?t=1"
+  },
+  "logoInfo": {
+    "title": "实习就业登记系统登录",
+    "image": "images/logo.png",
+    "href": ""
+  },
+  "menuInfo": [
+    {
+      "title": "常规管理",
+      "icon": "fa fa-address-book",
+      "href": "",
+      "target": "_self",
+      "child": [
+        {
+          "title": "学生管理",
+          "href": "",
+          "icon": "fa fa-home",
+          "target": "_self",
+          "child": [
+            {
+              "title": "信息统计",
+              "href": "page/welcome-2.html",
+              "icon": "fa fa-tachometer",
+              "target": "_self"
+            },
+            {
+              "title": "学生管理",
+              "href": "page/table.html",
+              "icon": "fa fa-file-text",
+              "target": "_self"
+            }
+          ]
+        },
+        {
+          "title": "实习管理",
+          "href": "",
+          "icon": "fa fa-window-maximize",
+          "target": "_self",
+          "child": [
+            {
+              "title": "实习信息",
+             "href": "page/table2.html",
+             "icon": "fa fa-file-text",
+              "target": "_self"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "code": 0,
+  "msg": "",
+  "count": 10,
+  "data": [
+    {
+      "id": 10000,
+      "username": "周巍",
+      "sex": "男",
+      "sid": "200109331",
+      "city": "四川省营山县带河乡河湾村6组",
+      "cellphone": 15908475644,
+      "dormid": 4220,
+      "birthdata": "1998-12-08",
+      "status": 1,
+			"classid": "2018级9班"
+    },
+    {
+     "id": 10001,
+     "username": "周巍",
+     "sex": "男",
+     "sid": "200109331",
+     "city": "四川省营山县带河乡河湾村6组",
+     "cellphone": 15908475644,
+     "dormid": 4220,
+     "birthdata": "1998-12-08",
+     "status": 3,
+     "classid": "2018级9班"
+    },
+    {
+     "id": 10002,
+     "username": "周巍",
+     "sex": "男",
+     "sid": "200109331",
+     "city": "四川省营山县带河乡河湾村6组",
+     "cellphone": 15908475644,
+     "dormid": 4220,
+     "birthdata": "1998-12-08",
+     "status": 0,
+     "classid": "2018级9班"
+    },
+    {
+     "id": 10003,
+     "username": "周巍",
+     "sex": "男",
+     "sid": "200109331",
+     "city": "四川省营山县带河乡河湾村6组",
+     "cellphone": 15908475644,
+     "dormid": 4220,
+     "birthdata": "1998-12-08",
+     "status": 3,
+     "classid": "2018级9班"
+    },
+    {
+     "id": 10004,
+     "username": "周巍",
+     "sex": "男",
+     "sid": "200109331",
+     "city": "四川省营山县带河乡河湾村6组",
+     "cellphone": 15908475644,
+     "dormid": 4220,
+     "birthdata": "1998-12-08",
+     "status": 2,
+     "classid": "2018级9班"
+    },
+    {
+     "id": 10005,
+     "username": "周巍",
+     "sex": "男",
+     "sid": "200109331",
+     "city": "四川省营山县带河乡河湾村6组",
+     "cellphone": 15908475644,
+     "dormid": 4220,
+     "birthdata": "1998-12-08",
+     "status": 3,
+     "classid": "2018级9班"
+    },
+    {
+     "id": 10006,
+     "username": "周巍",
+     "sex": "男",
+     "sid": "200109331",
+     "city": "四川省营山县带河乡河湾村6组",
+     "cellphone": 15908475644,
+     "dormid": 4220,
+     "birthdata": "1998-12-08",
+     "status": 2,
+     "classid": "2018级9班"
+    },
+    {
+     "id": 10007,
+     "username": "周巍",
+     "sex": "男",
+     "sid": "200109331",
+     "city": "四川省营山县带河乡河湾村6组",
+     "cellphone": 15908475644,
+     "dormid": 4220,
+     "birthdata": "1998-12-08",
+     "status": 3,
+     "classid": "2018级9班"
+    },
+    {
+     "id": 10008,
+     "username": "周巍",
+     "sex": "男",
+     "sid": "200109331",
+     "city": "四川省营山县带河乡河湾村6组",
+     "cellphone": 15908475644,
+     "dormid": 4220,
+     "birthdata": "1998-12-08",
+     "status": 2,
+     "classid": "2018级9班"
+    },
+    {
+     "id": 10009,
+     "username": "王小二",
+     "sex": "男",
+     "sid": "200109331",
+     "city": "四川省营山县带河乡河湾村6组",
+     "cellphone": 15908475644,
+     "dormid": 4220,
+     "birthdata": "1998-12-08",
+     "status": 1,
+     "classid": "2018级9班"
+    }
+  ]
+}

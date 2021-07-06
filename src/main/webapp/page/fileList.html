@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>学生信息列表</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="../lib/layui-v2.6.3/css/layui.css" media="all">
+    <link rel="stylesheet" href="../css/public.css" media="all">
+</head>
+<body>
+<div class="layuimini-container">
+    <div class="layuimini-main">
+        <script type="text/html" id="toolbarDemo">
+           <h3>毕业实习管理系统数据导库模板下载</h3>
+        </script>
+
+        <table class="layui-hide" id="currentTableId" lay-filter="currentTableFilter"></table>
+
+        <script type="text/html" id="currentTableBar">
+            <a class="layui-btn layui-btn-normal layui-btn-xs data-count-edit" lay-event="edit">下载</a>
+        </script>
+
+    </div>
+</div>
+<script src="../lib/layui-v2.6.3/layui.js" charset="utf-8"></script>
+<script>
+    layui.use(['form', 'table'], function () {
+        var $ = layui.jquery,
+            form = layui.form,
+            table = layui.table;
+
+        table.render({
+            elem: '#currentTableId',
+            url: '../api/files.json',
+            toolbar: '#toolbarDemo',
+            defaultToolbar: ['filter', 'exports', 'print', {
+                title: '提示',
+                layEvent: 'LAYTABLE_TIPS',
+                icon: 'layui-icon-tips'
+            }],
+            cols: [[
+                {field: 'id', width: 200, title: 'ID', sort: true},
+                {field: 'filename', width: 250, title: '文件名称'},
+								{field: 'url', width: 200, title: '文件下载地址'},
+                {field: 'remarks', width: 500, title: '文件使用说明'},
+								{
+									title: '操作',
+									minWidth: 100,
+									toolbar: '#currentTableBar',
+									align: "center"
+								}
+            ]],
+            limits: [10, 15, 20, 25, 50, 100],
+            limit: 10,
+            page: true,
+            skin: 'line'
+        });
+
+        table.on('tool(currentTableFilter)', function (obj) {
+            var data = obj.data;
+						var jsonOb = JSON.stringify(data);
+						var dataOb = JSON.parse(jsonOb);
+            if (obj.event === 'edit') {
+                var index = layer.open({
+                    title: '下载文件',
+                    type: 2,
+                    shade: 0.2,
+                    maxmin:false,
+                    shadeClose: true,
+                    area: ['50%', '60%'],
+                    content: dataOb.url,
+                });
+								setTimeout(function(){
+								  layer.full(index);
+									parent.location.reload();
+								}, 3000);
+								
+                return false;
+            }
+        });
+
+    });
+</script>
+
+</body>
+</html>

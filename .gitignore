@@ -1,0 +1,8 @@
+.idea
+Thumbs.db
+db.json
+*.log
+*.exe
+*.cfg
+*.class
+

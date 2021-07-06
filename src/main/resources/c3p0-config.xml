@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<c3p0-config>
+    <default-config>
+        <!-- 核心参数配置 -->
+        <property name="jdbcUrl">jdbc:mysql://47.108.3.9:3306/db_mr?useUnicode=true&amp;characterEncoding=utf8&amp;useSSL=false&amp;serverTimezone=UTC</property>
+        <property name="driverClass">com.mysql.cj.jdbc.Driver</property>
+        <property name="user">db_mr</property>
+        <property name="password">db_mr_dev1</property>
+        <!-- 池参数配置 -->
+        <property name="acquireIncrement">3</property>
+        <property name="initialPoolSize">10</property>
+        <property name="minPoolSize">2</property>
+        <property name="maxPoolSize">10</property>
+    </default-config>
+</c3p0-config>
